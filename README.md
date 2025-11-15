@@ -86,4 +86,4 @@ Specify license, e.g. MIT — see LICENSE file.
 
 ## Support / Contact
 
-Raise an issue on GitHub or contact the maintainers at: your-email@example.com
+Raise an issue on GitHub or contact the maintainers at: anasfareedi786786@gmail.com
