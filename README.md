@@ -1,21 +1,24 @@
 # Project Title
 
-A multilingual text classifier that identifies whether a given sentence is in English, French, or German using transformer-based embeddings and a fine-tuned classification model.
+A simple character-level RNN classifier that predicts whether an input word or name belongs to French, German, or another custom category.
+The model is trained from scratch using PyTorch and learns language patterns based on character sequences.
 
 ## Overview
 
-This project focuses on language identification across multiple European languages. It uses a pretrained transformer model to learn language patterns
-and classify input text with high accuracy. The pipeline includes preprocessing, training, evaluation, and a simple inference script for classifying new sentences.
+This project implements a lightweight multilingual classifier using a vanilla RNN trained on text files for each language category.
+It converts every word into a one-hot encoded tensor of characters and feeds it through an RNN to predict the most likely language.
+The notebook includes data loading, preprocessing, model training, predictions, and accuracy evaluation — all built with minimal external dependencies.
 
 ## Features
 
-Supports English, French, and German
-Transformer-based multilingual classification
-Clean preprocessing pipeline
-High-accuracy text predictions
-Evaluation metrics (accuracy, F1-score, confusion matrix)
-Easy inference script for classifying new sentences
-Modular codebase for adding more languages or models
+- Classifies text into French, German, and other custom categories
+- Character-level one-hot encoding
+- Simple and interpretable PyTorch RNN architecture
+- Real-time predictions on custom inputs
+- Training logs with loss and model guesses
+- Evaluation script with random sampling accuracy
+- Easy to extend with more languages or datasets
+- Fully self-contained Jupyter notebook — no external APIs or transformers needed
 
 ## Quick Start
 
